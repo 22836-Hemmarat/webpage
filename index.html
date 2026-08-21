@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | Student Portfolio</title>
+    <title>หน้าแรก | Modern Yellow-Black Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Background Decorative Grid -->
+    <div class="bg-grid-pattern"></div>
 
     <!-- Navigation Bar -->
     <header class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">STUDENT<span>PORTFOLIO</span></a>
+            <a href="index.html" class="logo">PORTFOLIO<span class="yellow-dot">.</span></a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active">หน้าแรก</a></li>
@@ -30,39 +33,86 @@
         <section class="hero-section">
             <div class="hero-container">
                 <div class="hero-text">
-                    <span class="badge">ยินดีต้อนรับสู่เว็บไซต์ของฉัน</span>
-                    <h1>สวัสดีครับ/ค่ะ <br>ฉันชื่อ <span class="highlight-text">[กรอกชื่อ-นามสกุล]</span></h1>
-                    <p class="hero-tagline">นักเรียนชั้นมัธยมศึกษาปีที่ 3 มุ่งมั่นเรียนรู้ มุ่งสู่อนาคตดิจิทัล</p>
-                    <p class="hero-desc">ยินดีต้อนรับสู่พื้นที่รวบรวมผลงาน ประวัติการเรียนรู้ ความสนใจ และกิจกรรมต่าง ๆ ของฉันในระดับชั้น ม.3</p>
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span> พร้อมเรียนรู้และสร้างสรรค์สิ่งใหม่
+                    </div>
+                    <h1>สวัสดีครับ/ค่ะ <br>ฉันชื่อ <span class="yellow-highlight">[เหมรัศมิ์ เนตรศิลป์]</span></h1>
+                    <p class="hero-tagline">⚡ นักเรียนชั้น ม.3 | Future Creator & Developer</p>
+                    <p class="hero-desc">ยินดีต้อนรับสู่พื้นที่ส่วนตัวของฉัน เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติ ผลงาน ความสนใจ และทักษะต่าง ๆ ในสไตล์ Modern Dark & Yellow Theme</p>
                     <div class="hero-buttons">
-                        <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น</a>
-                        <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรกของฉัน</a>
+                        <a href="profile.html" class="btn btn-yellow">รู้จักฉันมากขึ้น ➔</a>
+                        <a href="hobby.html" class="btn btn-outline">ดูงานอดิเรก</a>
                     </div>
                 </div>
-                <div class="hero-image-wrapper">
-                    <div class="profile-backdrop"></div>
-                    <img src="https://placehold.co/400x400/1976D2/FFFFFF?text=My+Profile" alt="รูปโปรไฟล์ของฉัน" class="hero-img">
-                    <div class="floating-card">
+
+                <div class="hero-visual">
+                    <div class="glow-backdrop"></div>
+                    <div class="profile-frame">
+                        <img src="https://placehold.co/400x400/18181B/FACC15?text=PROFILE+IMAGE" alt="รูปโปรไฟล์ของฉัน" class="hero-img">
+                    </div>
+                    <!-- Floating Tech Badges -->
+                    <div class="floating-badge badge-1">
                         <span>🎓 นักเรียน ม.3</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span>💻 Web Project</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <span>⭐ Favorite Student</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Highlights / Quick Stats -->
+        <!-- Stats / Highlights Section -->
         <section class="stats-section">
             <div class="stats-container">
                 <div class="stat-card">
-                    <h3>[กรอกระดับชั้น]</h3>
-                    <p>ระดับชั้นปัจจุบัน</p>
+                    <div class="stat-icon">🏫</div>
+                    <div class="stat-number">[ม.3/2]</div>
+                    <div class="stat-label">ระดับชั้นปัจจุบัน</div>
                 </div>
                 <div class="stat-card">
-                    <h3>[กรอกชื่อโรงเรียน]</h3>
-                    <p>สถาบันการศึกษา</p>
+                    <div class="stat-icon">📍</div>
+                    <div class="stat-number">[ลำพูน]</div>
+                    <div class="stat-label">จังหวัดที่อาศัย</div>
                 </div>
                 <div class="stat-card">
-                    <h3>[กรอกวิชาที่ชอบ]</h3>
-                    <p>วิชาที่สนใจเป็นพิเศษ</p>
+                    <div class="stat-icon">💻</div>
+                    <div class="stat-number">HTML / CSS</div>
+                    <div class="stat-label">ทักษะที่กำลังศึกษา</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number">[คอมพิวเตอร์]</div>
+                    <div class="stat-label">วิชาโปรด</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Spotlight Section -->
+        <section class="spotlight-section">
+            <div class="spotlight-container">
+                <div class="section-title">
+                    <h2>สิ่งโดดเด่นในตัวฉัน</h2>
+                    <p>จุดเด่นและความตั้งใจในการเรียนรู้</p>
+                </div>
+                <div class="spotlight-grid">
+                    <div class="spotlight-card">
+                        <div class="card-number">01</div>
+                        <h3>Creative Thinking</h3>
+                        <p>ชอบการคิดวิเคราะห์และสร้างสรรค์ชิ้นงานใหม่ๆ ให้มีความน่าสนใจและเป็นเอกลักษณ์</p>
+                    </div>
+                    <div class="spotlight-card">
+                        <div class="card-number">02</div>
+                        <h3>Tech Passion</h3>
+                        <p>สนใจเทคโนโลยีและการเขียนเว็บไซต์ อยากเรียนรู้เครื่องมือการพัฒนาระดับสูงในอนาคต</p>
+                    </div>
+                    <div class="spotlight-card">
+                        <div class="card-number">03</div>
+                        <h3>Continuous Learning</h3>
+                        <p>ไม่หยุดที่จะเรียนรู้สิ่งใหม่ๆ ทั้งในและนอกห้องเรียนเพื่อพัฒนาศักยภาพตนเอง</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -72,12 +122,12 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-info">
-                <h3>STUDENT PORTFOLIO</h3>
+                <h3>PORTFOLIO<span class="yellow-dot">.</span></h3>
                 <p>จัดทำโดย [กรอกชื่อ-นามสกุล] ชั้น ม.3/[กรอกห้อง]</p>
                 <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
             </div>
             <div class="footer-links">
-                <h4>ลิงก์ด่วน</h4>
+                <h4>เมนูลัด</h4>
                 <ul>
                     <li><a href="index.html">หน้าแรก</a></li>
                     <li><a href="profile.html">ประวัติส่วนตัว</a></li>
@@ -88,7 +138,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
+            <p>&copy; 2026 Student Portfolio Project. Designed with Yellow & Black Theme.</p>
         </div>
     </footer>
 
