@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>การศึกษา | Student Portfolio</title>
+    <title>การศึกษา | Modern Yellow-Black Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="bg-grid-pattern"></div>
+
     <header class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">STUDENT<span>PORTFOLIO</span></a>
+            <a href="index.html" class="logo">PORTFOLIO<span class="yellow-dot">.</span></a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">หน้าแรก</a></li>
@@ -26,71 +28,77 @@
 
     <main>
         <section class="page-header">
+            <span class="section-tag">EDUCATION PATH</span>
             <h1>ประวัติการศึกษา (Education)</h1>
-            <p>เส้นทางการเรียนรู้ตั้งแต่อดีตจนถึงปัจจุบัน</p>
+            <p>เส้นทางการศึกษาเล่าเรียนตั้งแประถมศึกษาจนถึงมัธยมศึกษาปีที่ 3</p>
         </section>
 
         <!-- Timeline Section -->
         <section class="timeline-section">
             <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">ประถมศึกษา</span>
-                        <h3>ระดับประถมศึกษา</h3>
-                        <p>โรงเรียน [กรอกชื่อโรงเรียนประถม]</p>
-                        <p class="timeline-desc">ศึกษาองค์ความรู้พื้นฐาน พัฒนาทักษะการคิดวิเคราะห์และร่วมกิจกรรมของโรงเรียน</p>
+                
+                <div class="timeline-block">
+                    <div class="timeline-badge">01</div>
+                    <div class="timeline-card">
+                        <span class="timeline-time">ระดับประถมศึกษา</span>
+                        <h3>โรงเรียน [จอมทอง]</h3>
+                        <p>สำเร็จการศึกษาระดับประถมศึกษา สร้างพื้นฐานความรู้ด้านคณิตศาสตร์ วิทยาศาสตร์ ภาษา และการทำกิจกรรมกลุ่ม</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">มัธยมศึกษาตอนต้น (ม.1 - ม.2)</span>
-                        <h3>ระดับมัธยมศึกษาตอนต้น</h3>
-                        <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
-                        <p class="timeline-desc">ศึกษาในหลักสูตรแกนกลาง เพิ่มพูนทักษะด้านวิทยาศาตร์ คณิตศาสตร์ และคอมพิวเตอร์</p>
+
+                <div class="timeline-block">
+                    <div class="timeline-badge">02</div>
+                    <div class="timeline-card">
+                        <span class="timeline-time">มัธยมศึกษาตอนต้น (ม.1 - ม.2)</span>
+                        <h3>โรงเรียน [จอมทอง]</h3>
+                        <p>ปรับตัวเข้าสู่การเรียนระดับมัธยมศึกษา ได้เข้าร่วมกิจกรรมคอมพิวเตอร์และเรียนรู้ทักษะไอทีเพิ่มเติม</p>
                     </div>
                 </div>
-                <div class="timeline-item active-timeline">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">ปัจจุบัน</span>
-                        <h3>ระดับชั้นมัธยมศึกษาปีที่ 3</h3>
-                        <p>โรงเรียน [กรอกชื่อโรงเรียน] (ห้อง ม.3/[กรอกห้อง])</p>
-                        <p class="timeline-desc">เน้นการเตรียมตัวเข้าสู่ระดับมัธยมศึกษาตอนปลาย และทำโครงงานคอมพิวเตอร์สร้างเว็บไซต์ Portfolio</p>
+
+                <div class="timeline-block active-block">
+                    <div class="timeline-badge yellow-badge">03</div>
+                    <div class="timeline-card active-card">
+                        <span class="timeline-time active-time">⚡ ปัจจุบัน (มัธยมศึกษาปีที่ 3)</span>
+                        <h3>โรงเรียน [จอมทอง] (ม.3/[กรอกห้อง])</h3>
+                        <p>กำลังศึกษาระดับชั้น ม.3 พัฒนาโครงงานคอมพิวเตอร์สร้างเว็บไซต์ Portfolio และเตรียมความพร้อมสู่การเรียนต่อ</p>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- Education Table Section -->
-        <section class="edu-table-section">
+        <section class="table-section">
             <div class="table-container">
-                <h2>ตารางสรุปประวัติการศึกษา</h2>
-                <div class="table-wrapper">
-                    <table class="styled-table">
+                <h2>ตารางสรุปประวัติการเรียน</h2>
+                <div class="table-responsive">
+                    <table class="dark-table">
                         <thead>
                             <tr>
-                                <th>ระดับการศึกษา</th>
+                                <th>ระดับชั้น</th>
                                 <th>ชื่อสถานศึกษา</th>
+                                <th>วิชาที่สนใจ</th>
                                 <th>สถานะ</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>ประถมศึกษา</td>
-                                <td>โรงเรียน [กรอกชื่อโรงเรียนประถม]</td>
-                                <td><span class="status-badge completed">สำเร็จการศึกษา</span></td>
+                                <td>โรงเรียน [จอมทอง]</td>
+                                <td>วิทยาศาสตร์ / ศิลปะ</td>
+                                <td><span class="badge-status success">จบการศึกษา</span></td>
                             </tr>
                             <tr>
-                                <td>มัธยมศึกษาตอนต้น (ม.1 - ม.2)</td>
-                                <td>โรงเรียน [กรอกชื่อโรงเรียน]</td>
-                                <td><span class="status-badge completed">สำเร็จการศึกษา</span></td>
+                                <td>มัธยมศึกษาปีที่ 1-2</td>
+                                <td>โรงเรียน [จอมทอง]</td>
+                                <td>คณิตศาสตร์ / อังกฤษ</td>
+                                <td><span class="badge-status success">จบการศึกษา</span></td>
                             </tr>
                             <tr>
                                 <td>มัธยมศึกษาปีที่ 3</td>
                                 <td>โรงเรียน [กรอกชื่อโรงเรียน]</td>
-                                <td><span class="status-badge current">กำลังศึกษา</span></td>
+                                <td>[คอมพิวเตอร์] / คอมพิวเตอร์</td>
+                                <td><span class="badge-status active">กำลังศึกษา</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -102,12 +110,12 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-info">
-                <h3>STUDENT PORTFOLIO</h3>
-                <p>จัดทำโดย [กรอกชื่อ-นามสกุล] ชั้น ม.3/[กรอกห้อง]</p>
-                <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
+                <h3>PORTFOLIO<span class="yellow-dot">.</span></h3>
+                <p>จัดทำโดย [เหมรัศมิ์ เนตรศิลป์] ชั้น ม.3/[2]</p>
+                <p>โรงเรียน [จอมทอง]</p>
             </div>
             <div class="footer-links">
-                <h4>ลิงก์ด่วน</h4>
+                <h4>เมนูลัด</h4>
                 <ul>
                     <li><a href="index.html">หน้าแรก</a></li>
                     <li><a href="profile.html">ประวัติส่วนตัว</a></li>
@@ -118,7 +126,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
+            <p>&copy; 2026 Student Portfolio Project. Designed with Yellow & Black Theme.</p>
         </div>
     </footer>
 
