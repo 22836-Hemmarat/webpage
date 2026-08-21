@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ช่องทางติดต่อ | Student Portfolio</title>
+    <title>ติดต่อ | Modern Yellow-Black Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="bg-grid-pattern"></div>
+
     <header class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">STUDENT<span>PORTFOLIO</span></a>
+            <a href="index.html" class="logo">PORTFOLIO<span class="yellow-dot">.</span></a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">หน้าแรก</a></li>
@@ -26,39 +28,58 @@
 
     <main>
         <section class="page-header">
-            <h1>ช่องทางติดต่อ (Contact)</h1>
-            <p>สอบถามข้อมูล ทักทาย หรือแลกเปลี่ยนความคิดเห็นกับฉัน</p>
+            <span class="section-tag">GET IN TOUCH</span>
+            <h1>ช่องทางการติดต่อ (Contact)</h1>
+            <p>สามารถติดต่อ ทักทาย หรือสอบถามข้อมูลเพิ่มเติมได้จากช่องทางด้านล่าง</p>
         </section>
 
+        <!-- Contact Cards Section -->
         <section class="contact-section">
             <div class="contact-container">
-                <div class="contact-cta">
-                    <h2>สามารถติดต่อฉันได้ที่</h2>
-                    <p>ยินดีที่ได้รู้จักทุกคน สามารถส่งข้อความหรือสอบถามข้อมูลเพิ่มเติมผ่านช่องทางด้านล่างนี้ได้เลยครับ/ค่ะ</p>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>อีเมล (Email)</h3>
+                    <p>student@example.com</p>
+                    <a href="mailto:student@example.com" class="btn btn-yellow-sm">ส่งอีเมล ➔</a>
                 </div>
 
-                <div class="contact-cards-grid">
-                    <div class="contact-card">
-                        <div class="contact-icon">✉️</div>
-                        <h3>อีเมล (Email)</h3>
-                        <p>student@example.com</p>
-                        <a href="mailto:student@example.com" class="btn btn-secondary">ส่งอีเมล</a>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">🏫</div>
-                        <h3>สถานศึกษา</h3>
-                        <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
-                        <span class="contact-sub">ชั้นมัธยมศึกษาปีที่ 3</span>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">🌐</div>
-                        <h3>โซเชียลมีเดีย</h3>
-                        <p>Facebook / Instagram / Line</p>
-                        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-secondary">ดูผลงาน GitHub</a>
-                    </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🏫</div>
+                    <h3>สถานศึกษา</h3>
+                    <p>โรงเรียน [จอมทอง]</p>
+                    <span class="contact-sub">มัธยมศึกษาปีที่ 3/[กรอกห้อง]</span>
                 </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>โซเชียล / โครงงาน</h3>
+                    <p>GitHub & Social Media</p>
+                    <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline-sm">เปิด GitHub</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Interactive Contact Form Mockup -->
+        <section class="form-section">
+            <div class="form-container">
+                <h2>ส่งข้อความถึงฉัน (Send Message)</h2>
+                <form class="dark-form" action="#" method="get" onclick="event.preventDefault(); alert('ขอบคุณสำหรับข้อความ! (นี่คือแบบฟอร์มตัวอย่างสำหรับโครงงาน)');">
+                    <div class="form-group">
+                        <label>ชื่อผู้ติดต่อ</label>
+                        <input type="text" placeholder="กรอกชื่อของคุณ..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>อีเมลผู้ติดต่อ</label>
+                        <input type="email" placeholder="example@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>ข้อความ / หัวข้อเรื่อง</label>
+                        <textarea rows="4" placeholder="พิมพ์ข้อความที่คุณต้องการส่ง..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-yellow full-width">ส่งข้อความ 🚀</button>
+                </form>
             </div>
         </section>
     </main>
@@ -66,12 +87,12 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-info">
-                <h3>STUDENT PORTFOLIO</h3>
-                <p>จัดทำโดย [กรอกชื่อ-นามสกุล] ชั้น ม.3/[กรอกห้อง]</p>
-                <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
+                <h3>PORTFOLIO<span class="yellow-dot">.</span></h3>
+                <p>จัดทำโดย [เหมรัศมิ์ เนตรศิลป์] ชั้น ม.3/[2]</p>
+                <p>โรงเรียน [จอมทอง]</p>
             </div>
             <div class="footer-links">
-                <h4>ลิงก์ด่วน</h4>
+                <h4>เมนูลัด</h4>
                 <ul>
                     <li><a href="index.html">หน้าแรก</a></li>
                     <li><a href="profile.html">ประวัติส่วนตัว</a></li>
@@ -82,7 +103,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
+            <p>&copy; 2026 Student Portfolio Project. Designed with Yellow & Black Theme.</p>
         </div>
     </footer>
 
