@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การศึกษา | Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">STUDENT<span>PORTFOLIO</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                    <li><a href="education.html" class="active">การศึกษา</a></li>
+                    <li><a href="hobby.html">งานอดิเรก</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>ประวัติการศึกษา (Education)</h1>
+            <p>เส้นทางการเรียนรู้ตั้งแต่อดีตจนถึงปัจจุบัน</p>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">ประถมศึกษา</span>
+                        <h3>ระดับประถมศึกษา</h3>
+                        <p>โรงเรียน [กรอกชื่อโรงเรียนประถม]</p>
+                        <p class="timeline-desc">ศึกษาองค์ความรู้พื้นฐาน พัฒนาทักษะการคิดวิเคราะห์และร่วมกิจกรรมของโรงเรียน</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">มัธยมศึกษาตอนต้น (ม.1 - ม.2)</span>
+                        <h3>ระดับมัธยมศึกษาตอนต้น</h3>
+                        <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
+                        <p class="timeline-desc">ศึกษาในหลักสูตรแกนกลาง เพิ่มพูนทักษะด้านวิทยาศาตร์ คณิตศาสตร์ และคอมพิวเตอร์</p>
+                    </div>
+                </div>
+                <div class="timeline-item active-timeline">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">ปัจจุบัน</span>
+                        <h3>ระดับชั้นมัธยมศึกษาปีที่ 3</h3>
+                        <p>โรงเรียน [กรอกชื่อโรงเรียน] (ห้อง ม.3/[กรอกห้อง])</p>
+                        <p class="timeline-desc">เน้นการเตรียมตัวเข้าสู่ระดับมัธยมศึกษาตอนปลาย และทำโครงงานคอมพิวเตอร์สร้างเว็บไซต์ Portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Table Section -->
+        <section class="edu-table-section">
+            <div class="table-container">
+                <h2>ตารางสรุปประวัติการศึกษา</h2>
+                <div class="table-wrapper">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>ระดับการศึกษา</th>
+                                <th>ชื่อสถานศึกษา</th>
+                                <th>สถานะ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ประถมศึกษา</td>
+                                <td>โรงเรียน [กรอกชื่อโรงเรียนประถม]</td>
+                                <td><span class="status-badge completed">สำเร็จการศึกษา</span></td>
+                            </tr>
+                            <tr>
+                                <td>มัธยมศึกษาตอนต้น (ม.1 - ม.2)</td>
+                                <td>โรงเรียน [กรอกชื่อโรงเรียน]</td>
+                                <td><span class="status-badge completed">สำเร็จการศึกษา</span></td>
+                            </tr>
+                            <tr>
+                                <td>มัธยมศึกษาปีที่ 3</td>
+                                <td>โรงเรียน [กรอกชื่อโรงเรียน]</td>
+                                <td><span class="status-badge current">กำลังศึกษา</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>STUDENT PORTFOLIO</h3>
+                <p>จัดทำโดย [กรอกชื่อ-นามสกุล] ชั้น ม.3/[กรอกห้อง]</p>
+                <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
+            </div>
+            <div class="footer-links">
+                <h4>ลิงก์ด่วน</h4>
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                    <li><a href="education.html">การศึกษา</a></li>
+                    <li><a href="hobby.html">งานอดิเรก</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
