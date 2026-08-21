@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว | Student Portfolio</title>
+    <title>ประวัติส่วนตัว | Modern Yellow-Black Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="bg-grid-pattern"></div>
+
     <header class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">STUDENT<span>PORTFOLIO</span></a>
+            <a href="index.html" class="logo">PORTFOLIO<span class="yellow-dot">.</span></a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">หน้าแรก</a></li>
@@ -26,68 +28,96 @@
 
     <main>
         <section class="page-header">
+            <span class="section-tag">ABOUT ME</span>
             <h1>ประวัติส่วนตัว (Profile)</h1>
-            <p>ข้อมูลทั่วไปและเรื่องราวเกี่ยวกับตัวฉัน</p>
+            <p>ทำความรู้จักตัวตน ข้อมูลพื้นฐาน และทักษะความสามารถของฉัน</p>
         </section>
 
+        <!-- Profile Section -->
         <section class="profile-section">
             <div class="profile-container">
-                <div class="profile-image-card">
-                    <img src="https://placehold.co/350x450/1976D2/FFFFFF?text=Profile+Image" alt="รูปโปรไฟล์ส่วนตัว">
-                    <div class="profile-badge">[กรอกชื่อเล่น]</div>
+                <div class="profile-avatar-card">
+                    <div class="avatar-wrapper">
+                        <img src="https://placehold.co/350x450/18181B/FACC15?text=MY+AVATAR" alt="รูปโปรไฟล์ส่วนตัว">
+                        <div class="nickname-badge">[เซเว่น]</div>
+                    </div>
                 </div>
-                <div class="profile-details-card">
-                    <h2>ข้อมูลพื้นฐาน</h2>
+
+                <div class="profile-info-card">
+                    <h2>ข้อมูลส่วนตัว (Personal Info)</h2>
                     <div class="info-grid">
-                        <div class="info-item">
-                            <span class="info-label">ชื่อ-นามสกุล:</span>
-                            <span class="info-value">[กรอกชื่อ-นามสกุล]</span>
+                        <div class="info-box">
+                            <span class="info-label">ชื่อ-นามสกุล</span>
+                            <span class="info-value">[เหมรัศมิ์ เนตรศิลป์]</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">ชื่อเล่น:</span>
-                            <span class="info-value">[กรอกชื่อเล่น]</span>
+                        <div class="info-box">
+                            <span class="info-label">ชื่อเล่น</span>
+                            <span class="info-value">[เซเว่น]</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">อายุ:</span>
-                            <span class="info-value">[กรอกอายุ] ปี</span>
+                        <div class="info-box">
+                            <span class="info-label">อายุ</span>
+                            <span class="info-value">[15] ปี</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">วันเกิด:</span>
-                            <span class="info-value">[กรอกวันเกิด]</span>
+                        <div class="info-box">
+                            <span class="info-label">วันเกิด</span>
+                            <span class="info-value">[18/11/2011]</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">จังหวัด:</span>
-                            <span class="info-value">[กรอกจังหวัด]</span>
+                        <div class="info-box">
+                            <span class="info-label">จังหวัด</span>
+                            <span class="info-value">[ลำพูน]</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">ระดับชั้น:</span>
-                            <span class="info-value">มัธยมศึกษาปีที่ 3/[กรอกห้อง]</span>
+                        <div class="info-box">
+                            <span class="info-label">การศึกษา</span>
+                            <span class="info-value">ม.3/[2]</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about-me-section">
-            <div class="about-container">
-                <h2>เกี่ยวกับฉัน</h2>
-                <div class="about-cards-grid">
-                    <div class="card">
-                        <div class="card-icon">💡</div>
-                        <h3>ความสนใจ</h3>
-                        <p>[กรอกความสนใจ เช่น การเขียนโปรแกรม เว็บดีไซน์ เทคโนโลยี หรือภาษาต่างประเทศ]</p>
+        <!-- Skill / Passion Bar Section -->
+        <section class="skills-section">
+            <div class="skills-container">
+                <h2>ระดับความสนใจ & ทักษะ (Passions & Skills)</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>คอมพิวเตอร์ & เทคโนโลยี</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
                     </div>
-                    <div class="card">
-                        <div class="card-icon">🎯</div>
-                        <h3>เป้าหมาย</h3>
-                        <p>ต้องการพัฒนาทักษะด้านเทคโนโลยีและคอมพิวเตอร์เพื่อนำไปต่อยอดในระดับมัธยมศึกษาตอนปลาย</p>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>วิชาที่ชอบ: [คอมพิวเตอร์]</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
                     </div>
-                    <div class="card">
-                        <div class="card-icon">⭐</div>
-                        <h3>จุดแข็ง</h3>
-                        <p>มีความตั้งใจในการเรียนรู้สิ่งใหม่ ๆ มีความรับผิดชอบ และชอบแก้ไขปัญหา</p>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>ความสนใจ: [การเขียนโปรแกรมหรือเขียนcode]</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>การทำงานร่วมกับผู้อื่น</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Philosophy / Quote Section -->
+        <section class="quote-section">
+            <div class="quote-container">
+                <div class="quote-mark">“</div>
+                <p class="quote-text">การเรียนรู้ไม่มีวันสิ้นสุด ยิ่งเราฝึกฝนสิ่งใหม่ๆ ในวันนี้ ก็ยิ่งสร้างโอกาสที่ดีให้กับตัวเราเองในวันข้างหน้า</p>
+                <div class="quote-author">- คติพจน์ประจำตัว -</div>
             </div>
         </section>
     </main>
@@ -95,12 +125,12 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-info">
-                <h3>STUDENT PORTFOLIO</h3>
-                <p>จัดทำโดย [กรอกชื่อ-นามสกุล] ชั้น ม.3/[กรอกห้อง]</p>
-                <p>โรงเรียน [กรอกชื่อโรงเรียน]</p>
+                <h3>PORTFOLIO<span class="yellow-dot">.</span></h3>
+                <p>จัดทำโดย [เหมรัศมิ์ เนตรศิลป์] ชั้น ม.3/[2]</p>
+                <p>โรงเรียน [จอมทอง]</p>
             </div>
             <div class="footer-links">
-                <h4>ลิงก์ด่วน</h4>
+                <h4>เมนูลัด</h4>
                 <ul>
                     <li><a href="index.html">หน้าแรก</a></li>
                     <li><a href="profile.html">ประวัติส่วนตัว</a></li>
@@ -111,7 +141,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
+            <p>&copy; 2026 Student Portfolio Project. Designed with Yellow & Black Theme.</p>
         </div>
     </footer>
 
